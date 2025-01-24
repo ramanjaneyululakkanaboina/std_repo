@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            padding: 20px;
+            padding-left: 70px;
+            margin: 200px;
+            margin-left: 400px;
+            margin-right: 400px;
+            background: lightblue;
+            box-shadow: 5px 5px 10px 5px blue ;
+            border-radius: 10px;
+        }
+        .sub{
+            margin: 20px;
+            padding: 10px;
+            margin-left: 100px;
+        }
+       #su1:hover{  
+              display: inline-block;
+              color:rgb(15, 23, 2);
+              background: greenyellow;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/data">
+            <h2>Student Details</h2>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Rollno :</td>
+                    <td><input type="text" name="roll"></td>
+                </tr>
+                <tr>
+                    <td>Python :</td>
+                    <td><input type="text" name="ph"></td>
+                </tr>
+                <tr>
+                    <td>Java :</td>
+                    <td><input type="text" name="ja"></td>
+                </tr>
+                <tr>
+                    <td>Javascript :</td>
+                    <td><input type="text" name="js"></td>
+                </tr>
+            </table>
+            <div class="sub">
+                <input type="submit"  id ="su1" value="submit">
+            </div>
+        </form>
+         
+    </div>
+</body>
+</html>

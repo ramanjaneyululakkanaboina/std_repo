@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table border="1px">
+            <tr>
+                <th>Name</th>
+                <th>RollNO</th>
+                <th>Python</th>
+                <th>Result</th>
+                <th>Java</th>
+                <th>Result</th>
+                <th>Javascript</th>
+                <th>Result</th>
+                <th>total</th>
+            </tr>
+        {%for na,val in records.items%}
+           <tr>
+            <td> {{na}} </td>
+            {%for s in val%}
+            <td>{{s.rno}}</td>
+            {%for scores in s.score %}
+            <td>{{scores}}</td> 
+                {%if scores >= 45 %} 
+                <td>Pass</td>
+                {%else%}
+                <td>Fail</td>
+                {%endif%}
+            {%endfor%} 
+            <td>{{s.total}}</td>
+           
+            {%endfor%}
+            </tr> 
+        {%endfor%}
+        </table>
+        <h2><a href="/home">Home</a></h2>
+    </div>
+</body>
+</html>
